@@ -1,9 +1,9 @@
 import React from "react";
-
+import {NavLink} from "react-router-dom";
 const Navbar = () => {
     return (<nav className="navbar navbar-expand-lg navbar-light bg-light">
     <a className="navbar-brand" href="#">
-      LeaseManager
+      Barahona Realty
     </a>
     <button
       className="navbar-toggler"
@@ -19,44 +19,24 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarNavDropdown">
       <ul className="navbar-nav">
         <li className="nav-item active">
-          <a className="nav-link" href="#">
+          <NavLink className="nav-link" to="/">
             Casa
-          </a>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
-            Crear nuevo contrato
-          </a>
+          <NavLink className ="nav-link" to="/newcontracts">
+           Nuevo Contrato
+          </NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
-            Otros Contratos
-          </a>
+          <NavLink className="nav-link" to="/mycontracts">Mis Contractos</NavLink> 
         </li>
         <li className="nav-item dropdown">
-          <a
-            className="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdownMenuLink"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Informacion Adiccional
-          </a>
-          <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a className="dropdown-item" href="#">
-              Action
-            </a>
-            <a className="dropdown-item" href="#">
-                Hola!
-            </a>
-    
-          </div>
+          <NavLink className = "nav-link" to="/information"> Information Addicional </NavLink>
         </li>
       </ul>
     </div>
   </nav>)
 }
 
-export default Navbar
+export default Navbar; 

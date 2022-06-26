@@ -1,7 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import logo from './logo.svg';
-import Navbar from "./Navigation/Navbar.js";
+import Navbar from "./components/Navigation/Navbar.js";
 import './App.css';
 
 function App() {
@@ -9,8 +8,10 @@ function App() {
     <div className="App">
       <Navbar/>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
         <h1> Better late than never?</h1>
+        <text> Actually this might have been a bad idea... </text>
+        <text> On another note this site is under construction!</text>
       </header>
     </div>
   );
