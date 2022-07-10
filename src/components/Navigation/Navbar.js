@@ -4,7 +4,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
     return (
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 
 
   <div class="container-fluid">
@@ -15,10 +15,9 @@ const Navbar = () => {
       <span class="navbar-toggler-icon"></span>
     </button>
   
-
+      
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    
-    
+      
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="/">Casa</a>
@@ -35,9 +34,11 @@ const Navbar = () => {
           <a class="nav-link" href="/information">Informacion</a>
         </li>
 
-      <form class="d-flex justify-content-end" action="/sign-in">
-        <button class="btn btn-light btn-sm btn-outline-secondary">Ingresar</button>
-      </form>
+        <form class="d-flex justify-content-end" action="/sign-in">
+        <button class="btn btn-secondary btn-sm">Ingresar</button>
+        </form>
+
+
       </ul>
     </div>
 

@@ -5,7 +5,7 @@
 
 .navbar-toggler {
     /* (80px - button height 34px) / 2 = 23px */
-    margin-top: 23px;
+    margin-top: 0px;
     padding: 9px 10px !important;
     width: auto;
 }
@@ -17,5 +17,5 @@
 }
 
 .btn {
-    color: white; 
+    color: white;
 }

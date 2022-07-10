@@ -8,10 +8,10 @@ import {
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Mycontracts from './routes/mycontracts';
+import Mycontracts from './routes/Mycontracts';
 import Newcontracts from './routes/newcontract';
 import Addinformation from './routes/addinformation';
-import Signup from './routes/signup';
+import Signup from './routes/Signup';
 import Signin from './routes/Signin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

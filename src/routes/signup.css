@@ -1,15 +1,15 @@
 
-.sign-up-box {
+.sign-up-box[id=box] {
     background-color: #FFFFFF;
-    width: 60vh;
+    width: 80%;
+    max-width: 60vh;
     height: 80%;
-    margin-top: 5%;
-    
+    margin-top: 40px;
     border-radius: 10px;
     padding: 35px;
 }
 
-.container { 
+form .container { 
     height: 100%;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@
     left:0px;
 }
 
-button {
+button[type=submit] {
     background-color: #68A4DF;
     color: white;
     padding: 14px 20px;
@@ -43,10 +43,10 @@ button:hover {
     opacity: 90%;
 }
 
-input[type=text], input[type=password] {
+.sign-up-input[type=text], .sign-up-input[type=password] {
     width: 100%;
     padding: 12px 20px;
-    margin: 25px 0;
+    margin: 15px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -54,4 +54,7 @@ input[type=text], input[type=password] {
     background-color: rgba(217, 217, 217, .46);
  }
   
+ .center {
+    text-align: center;
+ }
   
