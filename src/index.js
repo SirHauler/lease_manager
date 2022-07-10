@@ -12,16 +12,18 @@ import Mycontracts from './routes/mycontracts';
 import Newcontracts from './routes/newcontract';
 import Addinformation from './routes/addinformation';
 import Signup from './routes/signup';
+import Signin from './routes/Signin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App/>}/>
-      <Route path="/sign-in" element={<Signup/>}/>
+      <Route path="/sign-in" element={<Signin/>}/>
       <Route path="/mycontracts" element={<Mycontracts/>}/>
       <Route path="/newcontracts" element = {<Newcontracts/>}/>
       <Route path="/information" element = {<Addinformation/>}/>
+      <Route path="/sign-up" element={<Signup/>}/>
     </Routes>
   </BrowserRouter>
 );
