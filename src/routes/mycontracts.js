@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navigation/Navbar";
+
 function Mycontracts() {
     return (
-        
         <div>
             <Navbar/>
-            <h1>Estos son tus contractos</h1>
+            <h1>my contracts</h1>
         </div>
+
     ); 
 }
 

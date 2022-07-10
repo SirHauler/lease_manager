@@ -6,7 +6,7 @@ function Newcontracts() {
 
         <div className = "Newcontracts">
         <Navbar/> 
-        <h1>New Contracts</h1>
+        <h1> New Contracts </h1>
     </div>
     )
 }
