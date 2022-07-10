@@ -1,4 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import React from "react";
 import Navbar from "./components/Navigation/Navbar.js";
 import './App.css';

@@ -1,3 +1,21 @@
 .move-right {
     margin-left: auto;
 }
+
+
+.navbar-toggler {
+    /* (80px - button height 34px) / 2 = 23px */
+    margin-top: 23px;
+    padding: 9px 10px !important;
+    width: auto;
+}
+
+.navbar-brand {
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    color: white; 
+}
