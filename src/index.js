@@ -9,8 +9,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Mycontracts from './routes/Mycontracts';
-import Newcontracts from './routes/newcontract';
-import Addinformation from './routes/addinformation';
+import Newcontracts from './routes/Newcontract';
+import Addinformation from './routes/Addinformation';
 import Signup from './routes/Signup';
 import Signin from './routes/Signin';
 

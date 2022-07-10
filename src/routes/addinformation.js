@@ -1,7 +1,6 @@
 import React from "react"; 
 import Navbar from "../components/Navigation/Navbar";
 import './Addinformation.css'
-
 function Addinformation() {
     return (
     <div className="Addinformation">
