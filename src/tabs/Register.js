@@ -6,6 +6,9 @@ import axios from 'axios';
 
 
 
+const registerAPIURL = process.env.registerAPIURL;
+const x_api_key = process.env.x_api_key;
+
 
 const Register = () => {
 
