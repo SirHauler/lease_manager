@@ -16,10 +16,7 @@ import Newcontracts from './tabs/Newcontract';
 import { PrivateRoute } from './routes/PrivateRoute';
 
 
-const verifyTokenAPIURL = "https://spsnp9xeei.execute-api.us-east-1.amazonaws.com/prod/verify";
-
-
-
+const verifyTokenAPIURL = process.env.REACT_APP_verifyTokenAPIURL; 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
