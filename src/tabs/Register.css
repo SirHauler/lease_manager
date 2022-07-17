@@ -3,6 +3,7 @@
     background-color: #FFFFFF;
     width: 80%;
     max-width: 60vh;
+    min-width: 400px;
     height: 80%;
     margin-top: 40px;
     border-radius: 10px;
@@ -58,3 +59,7 @@ button:hover {
     text-align: center;
  }
   
+ .message {
+    color:red; 
+    font-size: .9em;
+ }

@@ -2,6 +2,8 @@
 .sign-in-box {
     background-color: #FFFFFF;
     width: 60vh;
+    min-width: 450px;
+    max-width: 450px;
     height: 40%;
     margin-top: 10%;
     border-radius: 10px;

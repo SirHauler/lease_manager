@@ -3,16 +3,22 @@ import ReactDOM from 'react-dom/client';
 import { 
   BrowserRouter, 
   Routes, 
-  Route
+  Route, 
 } from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Addinformation from './tabs/Addinformation';
-import Signup from './tabs/Signup';
+import Signup from './tabs/Register';
 import Signin from './tabs/Signin';
 import Mycontracts from './tabs/Mycontracts';
 import Newcontracts from './tabs/Newcontract';
+import { PrivateRoute } from './routes/PrivateRoute';
+
+
+const verifyTokenAPIURL = "https://spsnp9xeei.execute-api.us-east-1.amazonaws.com/prod/verify";
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,8 +26,16 @@ root.render(
     <Routes>
       <Route path="/" element={<App/>}/>
       <Route path="/sign-in" element={<Signin/>}/>
-      <Route path="/mycontracts" element={<Mycontracts/>}/>
-      <Route path="/newcontracts" element = {<Newcontracts/>}/>
+      <Route path="/mycontracts" element={
+        <PrivateRoute>
+          <Mycontracts/>
+        </PrivateRoute>
+      }/>
+      <Route path="/newcontracts" element = {
+        <PrivateRoute>
+          <Newcontracts/>
+        </PrivateRoute>
+      }/>
       <Route path="/information" element = {<Addinformation/>}/>
       <Route path="/sign-up" element={<Signup/>}/>
     </Routes>
