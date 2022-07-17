@@ -1,0 +1,9 @@
+{
+  "lambdaLayers": [],
+  "secretNames": [
+    "API_KEY",
+    "verifyTokenAPIURL",
+    "loginAPIURL",
+    "registerAPIURL"
+  ]
+}
