@@ -6,8 +6,8 @@ import Navbar from '../components/Navigation/Navbar';
 import { setUserSession } from '../service/AuthService';
 import axios from 'axios';
 
-const loginAPIURL = process.env.REACT_APP_loginAPIURL;
-const x_api_key = process.env.REACT_APP_x_api_key;
+const loginAPIURL = REACT_APP_loginAPIURL || process.env.REACT_APP_loginAPIURL; 
+const x_api_key =  REACT_APP_x_api_key || process.env.REACT_APP_x_api_key;  
 
 
 
