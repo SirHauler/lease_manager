@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { getToken } from "../service/AuthService";
-import { useNavigate, Navigate } from "react-router-dom";
-import {ValidateToken} from "../service/ValidateToken"; 
+import { useEffect } from "react";
+import { useNavigate} from "react-router-dom";
 import { Auth } from "aws-amplify";
 
 

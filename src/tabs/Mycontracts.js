@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import Navbar from "../components/Navigation/Navbar";
 import "./Mycontracts.css"; 
-import { getUser, resetUserSession } from "../service/AuthService";
 import { useNavigate } from "react-router-dom";
-import { GetUser } from "../service/GetUser";
 import { Auth } from "aws-amplify";
-import { ConsoleLogger } from "@aws-amplify/core";
 
 
 
@@ -38,7 +35,6 @@ const Mycontracts = () => {
     const [name, setName] = useState(); 
     const [email, setEmail] = useState(); 
     
-    console.log("This is the user object")
     Auth.currentAuthenticatedUser().then((user) => {
         setName(user.attributes.name); 
         setEmail(user.attributes.email); 

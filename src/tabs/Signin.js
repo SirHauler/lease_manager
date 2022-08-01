@@ -3,15 +3,8 @@ import {useNavigate } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './Signin.css'
 import Navbar from '../components/Navigation/Navbar';
-import { setUserSession } from '../service/AuthService';
-import axios from 'axios';
+// import axios from 'axios';
 import { Auth } from 'aws-amplify';
-
-const loginAPIURL =  process.env.REACT_APP_loginAPIURL; 
-const x_api_key = process.env.REACT_APP_x_api_key;   
-
-
-
 
 
 const Signin = (props) => {
@@ -21,47 +14,46 @@ const Signin = (props) => {
     const [errorMessage, setErrorMessage] = useState(null); 
     const navigate = useNavigate(); 
 
-    const submitHandler = (event) => {
+    // const submitHandler = (event) => {
       
-      event.preventDefault(); 
-      if (email.trim() === '' || password.trim() === '') {
-        setErrorMessage('Both username and password are required');
-        return; 
-      }
-      setErrorMessage(null);
+    //   event.preventDefault(); 
+    //   if (email.trim() === '' || password.trim() === '') {
+    //     setErrorMessage('Both username and password are required');
+    //     return; 
+    //   }
+    //   setErrorMessage(null);
 
-      const requestConfig = {
-        headers: {
-          "x-api-key": x_api_key
-        }
-      }
-      const requestBody = { 
-        email: email, 
-        password: password
-      }
+    //   const requestConfig = {
+    //     headers: {
+    //       "x-api-key": x_api_key
+    //     }
+    //   }
+    //   const requestBody = { 
+    //     email: email, 
+    //     password: password
+    //   }
 
-      axios.post(loginAPIURL, requestBody, requestConfig).then((response) => {
-        console.log(response.data.user); 
-        console.log(response.data.token); 
-        setUserSession(response.data.user, response.data.token);  
-        navigate('/mycontracts'); 
+    //   axios.post(loginAPIURL, requestBody, requestConfig).then((response) => {
+    //     console.log(response.data.user); 
+    //     console.log(response.data.token); 
+    //     setUserSession(response.data.user, response.data.token);  
+    //     navigate('/mycontracts'); 
   
-      }).catch((error) => {
-        if (error.response.status === 401 || error.response.status === 403) {
-          setErrorMessage(error.response.data.message); 
-        } else {
-          setErrorMessage('Server is down.'); 
-        }
-      })
-    }
+    //   }).catch((error) => {
+    //     if (error.response.status === 401 || error.response.status === 403) {
+    //       setErrorMessage(error.response.data.message); 
+    //     } else {
+    //       setErrorMessage('Server is down.'); 
+    //     }
+    //   })
+    // }
 
 
     async function signIn(event) {
         try {
             event.preventDefault(); 
             let username = email; 
-            const user = await Auth.signIn(username, password);
-            console.log(user)
+            await Auth.signIn(username, password);
             navigate('/mycontracts')
         } catch (error) {
             console.log('error signing in', error);

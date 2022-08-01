@@ -1,5 +1,4 @@
 import React from 'react';
-import beautifulhouse from './beautifulhouse.jpeg'
 import './home.css'
 import { useNavigate } from 'react-router-dom';
 const Home = () => {
