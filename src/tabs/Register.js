@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from '../components/Navigation/Navbar';
 import './Register.css'; 
-//import { SignUp } from '@aws-amplify/ui-react/dist/types/components/Authenticator/SignUp';
 import { Auth } from 'aws-amplify';
 import { useNavigate } from 'react-router-dom';
 

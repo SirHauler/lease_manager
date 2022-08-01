@@ -3,7 +3,6 @@ import {useNavigate } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './Signin.css'
 import Navbar from '../components/Navigation/Navbar';
-// import axios from 'axios';
 import { Auth } from 'aws-amplify';
 
 
