@@ -10,8 +10,6 @@ const Home = () => {
     navigate('/sign-in'); 
   }
 
-
-
   return (
     <div className='mainDiv' >
       <div className='homePage' id='background'>
