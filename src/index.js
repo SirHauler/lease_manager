@@ -14,14 +14,15 @@ import Signin from './tabs/Signin';
 import Mycontracts from './tabs/Mycontracts';
 import Newcontracts from './tabs/Newcontract';
 import { PrivateRoute } from './routes/PrivateRoute';
+import ConfirmSignUp from './tabs/Confirmsignup';
+import Home from './components/Home/home'; 
 
 
-const verifyTokenAPIURL = process.env.REACT_APP_verifyTokenAPIURL; 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App/>}/>
+      <Route path="/" element={<Home/>}/>
       <Route path="/sign-in" element={<Signin/>}/>
       <Route path="/mycontracts" element={
         <PrivateRoute>
@@ -35,6 +36,8 @@ root.render(
       }/>
       <Route path="/information" element = {<Addinformation/>}/>
       <Route path="/sign-up" element={<Signup/>}/>
+      <Route path="/confirm-sign-up" element={<ConfirmSignUp/>}/>
+      
     </Routes>
   </BrowserRouter>
 );

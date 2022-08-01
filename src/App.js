@@ -4,13 +4,32 @@ import Navbar from "./components/Navigation/Navbar.js";
 import './App.css';
 import Home from "./components/Home/home.js";
 
-function App() {
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Navbar/>  
+//       <Home/>
+//     </div>
+//   );
+// }
+
+import { Amplify } from 'aws-amplify';
+
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+
+import awsExports from './aws-exports';
+Amplify.configure(awsExports);
+
+function App({ signOut, user }) {
   return (
-    <div className="App">
+    <div>
       <Navbar/>
       <Home/>
     </div>
+
   );
 }
 
-export default App;
+export default App; 

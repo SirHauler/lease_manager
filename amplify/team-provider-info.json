@@ -13,13 +13,14 @@
     },
     "categories": {
       "auth": {
-        "leasemanager4c6235dc": {}
+        "leasemanager4c6235dc": {},
+        "leasemanager": {}
       },
       "function": {
         "leaseManagerKeys": {
-          "secretsPathAmplifyAppId": "d3n85wppc3vhtt",
           "deploymentBucketName": "amplify-amplifya62e6ddb035c4-staging-230022-deployment",
-          "s3Key": "amplify-builds/leaseManagerKeys-42683870434a6b4f5534-build.zip"
+          "s3Key": "amplify-builds/leaseManagerKeys-4953717131417a5a796a-build.zip",
+          "secretsPathAmplifyAppId": "d3n85wppc3vhtt"
         }
       }
     }

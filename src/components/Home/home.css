@@ -1,0 +1,85 @@
+.homePage {
+    background-image: url(./frontpagehouse.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainDiv {
+    height: 100vh; 
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    border: 5px solid black; 
+    padding: 15px;
+    cursor: pointer;
+}
+
+#fixedButton {
+    position: fixed;
+    bottom: 5px;
+    right: 0px; 
+    width: 20%;
+    max-width: 100px;
+    margin-right: 20px;
+    background-color: black;
+    border-radius: 0%;
+}
+
+#logoName:hover {
+    font-size: xxx-large; 
+    -webkit-transform: scale(1.02);
+}
+
+#fixedButton:hover {
+    background-color:rgba(68, 75, 81, .8);
+    -webkit-transform: scale(1.05);
+}
+
+
+#logoid:hover {
+    
+
+}
+
+#logoid:hover ~ #background {
+
+}
+
+
+div.slide-right {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    border: 5px solid black; 
+    padding: 15px;
+    cursor: pointer;
+    overflow:hidden;
+  }
+  div.slide-right p {
+    animation: 10s slide-right;
+  }
+
+  div.slide-right h1 {
+    animation: 3s slide-right;
+  }
+  
+  @keyframes slide-right {
+    from {
+      margin-left: -100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+

@@ -5,9 +5,12 @@ import './Signin.css'
 import Navbar from '../components/Navigation/Navbar';
 import { setUserSession } from '../service/AuthService';
 import axios from 'axios';
+import { Auth } from 'aws-amplify';
 
-const loginAPIURL = REACT_APP_loginAPIURL || process.env.REACT_APP_loginAPIURL; 
-const x_api_key =  REACT_APP_x_api_key || process.env.REACT_APP_x_api_key;  
+const loginAPIURL =  process.env.REACT_APP_loginAPIURL; 
+const x_api_key = process.env.REACT_APP_x_api_key;   
+
+
 
 
 
@@ -52,10 +55,23 @@ const Signin = (props) => {
       })
     }
 
+
+    async function signIn(event) {
+        try {
+            event.preventDefault(); 
+            let username = email; 
+            const user = await Auth.signIn(username, password);
+            console.log(user)
+            navigate('/mycontracts')
+        } catch (error) {
+            console.log('error signing in', error);
+        }
+    }
+
     return (
       <div>
         <Navbar/>
-        <form onSubmit={submitHandler} className='container'>
+        <form onSubmit={signIn} className='container'>
           <div className='sign-in-box'>
             <h2>Ingresar</h2>
               <label for="uname"><b>Correo</b></label>
