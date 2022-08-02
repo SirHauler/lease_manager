@@ -11,7 +11,7 @@ export const PrivateRoute = ({ children }) => {
           await Auth.currentAuthenticatedUser(); 
         } catch (err) {
         //   props.history.push(route)
-          navigate("/sign-in")
+          navigate("/sign-in"); 
         }
       }
       useEffect(() => {

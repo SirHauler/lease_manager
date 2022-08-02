@@ -48,12 +48,13 @@ const Signin = (props) => {
     // }
 
 
-    async function signIn(event) {
+    async function amplifySignIn(event) {
         try {
             event.preventDefault(); 
             let username = email; 
             await Auth.signIn(username, password);
-            navigate('/mycontracts')
+            navigate('/mycontracts');
+            console.log("Successfully Logged In"); 
         } catch (error) {
             console.log('error signing in', error);
         }
@@ -62,7 +63,7 @@ const Signin = (props) => {
     return (
       <div>
         <Navbar/>
-        <form onSubmit={signIn} className='container'>
+        <form onSubmit={amplifySignIn} className='container'>
           <div className='sign-in-box'>
             <h2>Ingresar</h2>
               <label for="uname"><b>Correo</b></label>

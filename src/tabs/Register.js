@@ -38,7 +38,6 @@ const Register = () => {
       }
 }
 
-// onSubmit={signUp} 
     return (
         <div>
         <Navbar/>

@@ -12,15 +12,15 @@ const Mycontracts = () => {
 
 
     const navigate = useNavigate();
-    ;(async() => {
-        try {
-            await Auth.currentAuthenticatedUser(); 
-        } catch(err) {
-            navigate('/sign-in')
-            console.log(err);  
-        }
+    // ;(async() => {
+    //     try {
+    //         await Auth.currentAuthenticatedUser(); 
+    //     } catch(err) {
+    //         navigate('/sign-in')
+    //         console.log(err);  
+    //     }
         
-    })() 
+    // })() 
 
 
     async function signOut() {
