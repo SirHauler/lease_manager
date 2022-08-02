@@ -5,8 +5,8 @@ import './App.css';
 import Home from "./components/Home/home.js";
 
 import { Amplify, Auth } from 'aws-amplify';
-import awsconfig from './aws-exports';
-Amplify.configure(awsconfig);
+import awsmobile from './aws-exports';
+Amplify.configure(awsmobile);
 
 function App() {
   return (
