@@ -17,8 +17,8 @@ import ConfirmSignUp from './tabs/Confirmsignup';
 import FrontPage from './components/Home/FrontPage'; 
 import {createRoot} from 'react-dom/client'; 
 import { Amplify } from 'aws-amplify';
-import awsexports from './aws-exports';
-Amplify.configure(awsexports);
+import awsExports from './aws-exports';
+Amplify.configure(awsExports);
 
 const rootElement = document.getElementById('root'); 
 const root = createRoot(rootElement); 
