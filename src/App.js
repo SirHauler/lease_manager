@@ -2,11 +2,10 @@
 import React from "react";
 import Navbar from "./components/Navigation/Navbar.js";
 import './App.css';
-import Home from "./components/Home/home.js";
+import Home from "./components/Home/FrontPage.js";
 
-import { Amplify, Auth } from 'aws-amplify';
-import awsmobile from './aws-exports';
-Amplify.configure(awsmobile);
+
+
 
 function App() {
   return (

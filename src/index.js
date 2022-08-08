@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import { 
   BrowserRouter, 
   Routes, 
@@ -15,14 +14,22 @@ import Mycontracts from './tabs/Mycontracts';
 import Newcontracts from './tabs/Newcontract';
 import { PrivateRoute } from './routes/PrivateRoute';
 import ConfirmSignUp from './tabs/Confirmsignup';
-import Home from './components/Home/home'; 
+import FrontPage from './components/Home/FrontPage'; 
+import {createRoot} from 'react-dom/client'; 
+import { Amplify } from 'aws-amplify';
+import awsmobile from './aws-exports';
+Amplify.configure(awsmobile);
 
+const rootElement = document.getElementById('root'); 
+const root = createRoot(rootElement); 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home/>}/>
+      <Route path="/" element={<FrontPage/>}/>
+      <Route path="/home" element={<App/>}/>
       <Route path="/sign-in" element={<Signin/>}/>
       <Route path="/mycontracts" element={
         <PrivateRoute>
@@ -36,8 +43,7 @@ root.render(
       }/>
       <Route path="/information" element = {<Addinformation/>}/>
       <Route path="/sign-up" element={<Signup/>}/>
-      <Route path="/confirm-sign-up" element={<ConfirmSignUp/>}/>
-      
+      <Route path="/confirm-sign-up" element={<ConfirmSignUp/>}/>      
     </Routes>
   </BrowserRouter>
 );
