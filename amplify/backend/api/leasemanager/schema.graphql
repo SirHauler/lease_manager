@@ -1,0 +1,18 @@
+type Todo @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  rented: Boolean!
+  rent: Int!
+  price: Int!
+  address: String!
+  description: String
+}
+
+type Properties @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  username: String!
+  rented: Boolean!
+  rent: Int!
+  price: Int!
+  address: String!
+  description: String
+} 

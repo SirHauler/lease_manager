@@ -3,7 +3,7 @@
   "cognitoConfig": {
     "identityPoolName": "testAuthIdentityPool",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "leasem6ea4511e",
+    "resourceNameTruncated": "leasem95ba4fe8",
     "userPoolName": "leasemanager",
     "autoVerifiedAttributes": [
       "email"
@@ -25,17 +25,17 @@
       "Requires Uppercase"
     ],
     "requiredAttributes": [
-      "name",
-      "email"
+      "email",
+      "name"
     ],
     "aliasAttributes": [],
     "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [],
     "userpoolClientReadAttributes": [],
-    "userpoolClientLambdaRole": "leasem6ea4511e_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "leasem95ba4fe8_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "6ea4511e",
+    "sharedId": "95ba4fe8",
     "resourceName": "leasemanager",
     "authSelections": "identityPoolAndUserPool",
     "serviceName": "Cognito",

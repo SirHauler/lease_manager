@@ -6,7 +6,6 @@ import Home from "./components/Home/FrontPage.js";
 
 
 
-
 function App() {
   return (
     <div className="App">

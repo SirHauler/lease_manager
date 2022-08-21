@@ -19,3 +19,15 @@
 .btn {
     color: white;
 }
+
+
+#personalInfoButton {
+    margin-left: 10%;
+    width: 200px; 
+}
+
+@media (max-width:580px) {
+    #personalInfoButton {
+        margin-top: 10px;
+    }
+}

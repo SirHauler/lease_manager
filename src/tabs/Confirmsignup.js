@@ -15,7 +15,6 @@ const ConfirmSignUp = () => {
         event.preventDefault(); 
         await Auth.confirmSignUp(username, code);
         console.log('Success')
-
         // if you get this far then the confirmation is done
         navigate('/')
         } catch (error) {

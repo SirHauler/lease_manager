@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "leasemanager",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2022-08-20T20:47:22.262Z"
+}

@@ -1,5 +1,5 @@
 import React from "react"; 
-import Navbar from "../components/Navigation/Navbar";
+import Navbar from "../../components/Navigation/Navbar";
 import './Addinformation.css'
 function Addinformation() {
     return (

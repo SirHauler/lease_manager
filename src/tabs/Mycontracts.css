@@ -1,3 +1,40 @@
 .contracts-container {
     text-align: center;
 }
+
+#createPropertyButton {
+    margin-top: 2%;
+}
+
+div.contractsWindow {
+    position:fixed; 
+    top: 50%; 
+    left: 35%; 
+    background-color: white;
+    width: 30%;
+    height: 40%;
+}
+
+
+input[type=text], input[type=password], input[type=number]{
+    width: 100%;
+    padding: 12px; 
+    margin: 25px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: rgba(217, 217, 217, .46);
+ }
+
+.itemContainer {
+        border: 0px solid black;
+        position: relative;
+        top: 50px; 
+        width: 80%;
+        left: 10%; 
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        overflow: hidden;
+}
+

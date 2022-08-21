@@ -7,7 +7,7 @@ import {
 import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
-import Addinformation from './tabs/Addinformation';
+import Addinformation from './tabs/AddInfo/Addinformation';
 import Signup from './tabs/Register';
 import Signin from './tabs/Signin';
 import Mycontracts from './tabs/Mycontracts';
@@ -16,10 +16,20 @@ import { PrivateRoute } from './routes/PrivateRoute';
 import ConfirmSignUp from './tabs/Confirmsignup';
 import FrontPage from './components/Home/FrontPage'; 
 import {createRoot} from 'react-dom/client'; 
-import { Amplify } from 'aws-amplify';
-import awsconfig from './src/aws-exports';
-Amplify.configure(awsconfig);
+import { PubSub } from 'aws-amplify';
+import { Amplify, Auth, API} from 'aws-amplify';
+import { DataStore } from '@aws-amplify/datastore';
+import amplify from './aws-exports';
 
+
+
+
+Amplify.configure(amplify);
+Auth.configure(amplify); 
+PubSub.configure(amplify); 
+DataStore.configure(amplify); 
+API.configure(amplify); 
+DataStore.start(); 
 
 const rootElement = document.getElementById('root'); 
 const root = createRoot(rootElement); 

@@ -1,0 +1,10 @@
+{
+  "resourceName": "UserAndPropertyTable",
+  "tableName": "UserAndPropertyTable",
+  "partitionKey": {
+    "fieldName": "userid",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

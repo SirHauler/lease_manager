@@ -11,8 +11,8 @@
           "EMAIL"
         ],
         "signupAttributes": [
-          "NAME",
-          "EMAIL"
+          "EMAIL",
+          "NAME"
         ],
         "passwordProtectionSettings": {
           "passwordPolicyMinLength": 8,
@@ -33,12 +33,34 @@
       }
     }
   },
-  "function": {
-    "leaseManagerKeys": {
-      "build": true,
+  "storage": {
+    "UserAndPropertyTable": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation"
+    }
+  },
+  "function": {},
+  "api": {
+    "leasemanager": {
+      "service": "AppSync",
       "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": []
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ]
+        }
+      }
     }
   }
 }
