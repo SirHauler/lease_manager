@@ -1,4 +1,26 @@
-# Getting Started with Create React App
+
+
+# Property Manager Application
+
+This project aims to provide an interface for tenants to request service from property owners and for them to manager
+their lease information. From an owners point of view they will be able to manager their tenants information and
+service requests.
+
+
+## What has been implemented? 
+
+- Authentication
+- UI for creating properties (Admin Role)
+
+
+## What is being worked on? 
+
+- Backend for creating/updating properties
+- Additional UI for updating properties
+
+
+<------------------------------------------------------------------------------------------------------------------------------------>
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
